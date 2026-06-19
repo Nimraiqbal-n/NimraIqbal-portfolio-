@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nimra Iqbal — Full-Stack Developer portfolio. ASP.NET, MSSQL, JavaScript & data-structures focused builder of web systems.">
+<title>Nimra Iqbal — Full-Stack Developer</title>
+
+<!-- ===== FONTS ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ===== ICONS ===== -->
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- ===== CSS ===== -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- ===== EMAILJS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('WM_z13fkL_totKv64')</script>
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div class="loader" id="loader">
+    <div class="loader__mark">
+        <span>N</span><span>I</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+    <p class="loader__label">booting_portfolio.exe</p>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!--===== HEADER =====-->
+<header class="l-header" id="l-header">
+    <nav class="nav bd-grid">
+        <a href="#home" class="nav__logo">N<span>.</span>Iqbal</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active" data-tag="00"><span class="nav__tag">00</span>Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link" data-tag="01"><span class="nav__tag">01</span>About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link" data-tag="02"><span class="nav__tag">02</span>Skills</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link" data-tag="03"><span class="nav__tag">03</span>Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link" data-tag="04"><span class="nav__tag">04</span>Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+        <div class="home__grid"></div>
+        <canvas id="hero-canvas" class="home__canvas"></canvas>
+
+        <div class="home__container bd-grid">
+            <div class="home__copy">
+                <!-- <p class="eyebrow">/// PORTFOLIO_v1.0 — RAWALPINDI, PK</p> -->
+                <h1 class="home__title">Hey, I'm<br><span>Nimra Iqbal</span></h1>
+             <p class="home__role">Software Engineer <span class="home__cursor" id="role-typed"></span></p>
+
+<p class="home__lede">
+I’m a software engineer who builds end-to-end web systems — from ASP.NET and SQL Server backends to responsive, user-friendly interfaces. I focus on writing clean, maintainable code and building products that are structured to scale, not just to ship.
+</p>
+                <div class="home__cta">
+                    <a href="#portfolio" class="btn btn--primary">View Projects <i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/nimra-iqbal252004" class="home__social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Nimraiqbal-n" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="home__scroll-link"><span>scroll</span><i class='bx bx-down-arrow-alt'></i></a>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <p class="eyebrow eyebrow--center">01 — ABOUT</p>
+        <h2 class="section-title">Who I Am</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__media">
+                <div class="about__frame">
+                    <img src="assets/img/nimra.png" alt="Nimra Iqbal">
+                </div>
+                <div class="about__frame-tag">student.cs</div>
+            </div>
+
+            <div class="about__content">
+               <span class="about__profession">Aspiring Full-Stack Developer</span>
+<p class="about__text">
+I’m a Software Engineer with a strong foundation in full-stack development, focused on building practical, scalable, and user-centered software solutions. I enjoy working across the entire development lifecycle  from crafting clean and responsive interfaces to designing efficient backend systems and well-structured databases.
+</p>
+
+<p class="about__text">
+I have worked on multiple academic and real-world projects that strengthened my skills in system design, problem-solving, and building production-oriented applications. My Final Year Project, <strong>RozgarHub</strong>, is an AI-powered employment platform designed to connect blue-collar and daily wage workers with employers, aiming to make job access more efficient and inclusive.
+</p>
+
+<p class="about__text">
+Alongside this, I’ve contributed to ERP systems and other full-stack applications, gaining hands-on experience in building reliable, scalable, and performance-driven software solutions.
+</p>
+                <!-- <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__num" data-count="7">0</span>
+                        <span class="stat__label">Projects Shipped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="10">0</span>
+                        <span class="stat__label">Tools & Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="2">0</span>
+                        <span class="stat__label">Core Stacks</span>
+                    </div>
+                </div> -->
+
+                <div class="about__social">
+                    <a href="https://www.linkedin.com/in/nimra-iqbal252004" class="about__social-icon"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    <a href="https://github.com/Nimraiqbal-n" class="about__social-icon"><i class='bx bxl-github'></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <p class="eyebrow eyebrow--center">02 — SKILLS</p>
+        <h2 class="section-title">What I Work With</h2>
+
+        <div class="skills__container bd-grid">
+            <div class="skills__col">
+                <h3 class="skills__subtitle"><i class='bx bx-code-alt'></i> Technical Skills</h3>
+                <div class="skill-bar"><span class="skill-bar__name">HTML / CSS / JavaScript</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="92"></div></div></div>
+                <div class="skill-bar"><span class="skill-bar__name">ASP.NET &amp; MSSQL</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div></div>
+                <div class="skill-bar"><span class="skill-bar__name">C++ &amp; Python</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div></div>
+                <div class="skill-bar"><span class="skill-bar__name">Data Structures &amp; Algorithms</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="83"></div></div></div>
+                <div class="skill-bar"><span class="skill-bar__name">OOP &amp; SEO</span><div class="skill-bar__track"><div class="skill-bar__fill" data-width="78"></div></div></div>
+            </div>
+
+            <div class="skills__col">
+                <h3 class="skills__subtitle"><i class='bx bx-palette'></i> Design Tools</h3>
+                <div class="skills__chips">
+                    <span class="chip"><i class='bx bxl-figma'></i> Figma</span>
+                    <span class="chip"><i class='bx bx-shape-circle'></i> Canva</span>
+                    <span class="chip"><i class='bx bxl-adobe'></i> Adobe</span>
+                </div>
+
+                <!-- <div class="skills__visual">
+                    <img src="assets/img/skill.jpg" alt="Design workspace">
+                    <span class="skills__visual-glow"></span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section" id="portfolio">
+        <p class="eyebrow eyebrow--center">03 — PROJECTS</p>
+        <h2 class="section-title">Things I've Built</h2>
+
+        <div class="portfolio__container bd-grid">
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/socialmedia.png" alt="Social Media Platform"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">01</span>
+                    <h3 class="portfolio__name">Social Media Platform</h3>
+                    <p class="portfolio__desc">A full-stack social app with feeds, profiles &amp; interactions.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/netflix.png" alt="Netflix Clone"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">02</span>
+                    <h3 class="portfolio__name">Netflix Clone</h3>
+                    <p class="portfolio__desc">Browse-and-stream UI clone with dynamic content rows.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/currency.png" alt="Currency Converter"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">03</span>
+                    <h3 class="portfolio__name">Currency Converter</h3>
+                    <p class="portfolio__desc">Real-time exchange-rate conversion tool.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/GROOVESPACE.png" alt="Music Player"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">04</span>
+                    <h3 class="portfolio__name">Music Player — GrooveSpace</h3>
+                    <p class="portfolio__desc">A playlist-driven audio player with custom controls.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/notepad.png" alt="Notepad"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">05</span>
+                    <h3 class="portfolio__name">Notepad</h3>
+                    <p class="portfolio__desc">Lightweight text editor with local save support.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/todolist.png" alt="To-do list"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">06</span>
+                    <h3 class="portfolio__name">Task Manager</h3>
+                    <p class="portfolio__desc">Task manager with create, complete &amp; delete flows.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+            <article class="portfolio__card">
+                <div class="portfolio__img"><img src="assets/img/imgGallery.png" alt="Image Gallery"></div>
+                <div class="portfolio__body">
+                    <span class="portfolio__index">07</span>
+                    <h3 class="portfolio__name">Image Gallery</h3>
+                    <p class="portfolio__desc">Filterable gallery with lightbox-style viewing.</p>
+                    <a href="#" class="portfolio__link">View Project <i class='bx bx-link-external'></i></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <p class="eyebrow eyebrow--center">04 — CONTACT</p>
+        <h2 class="section-title">Let's Build Something</h2>
+
+        <div class="contact__container bd-grid">
+            <div class="contact__info">
+                <p class="contact__intro">Have a project, an internship opening, or just want to talk tech? My inbox is open.</p>
+
+                <div class="contact__item">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <h3 class="contact__subtitle">Email</h3>
+                        <span class="contact__text">nimraaaiqbal@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <i class='bx bx-map-pin'></i>
+                    <div>
+                        <h3 class="contact__subtitle">Address</h3>
+                        <span class="contact__text">Lahore, Pakistan</span>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <i class='bx bx-link-alt'></i>
+                    <div>
+                        <h3 class="contact__subtitle">Elsewhere</h3>
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/nimra-iqbal252004"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/Nimraiqbal-n"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact__form" id="contact-form" novalidate>
+                <div class="contact__inputs">
+                    <div class="field">
+                        <input type="text" id="name" placeholder=" " class="contact__input" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="email_id" placeholder=" " class="contact__input" required>
+                        <label for="email_id">Email</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <textarea id="message" rows="6" class="contact__input" placeholder=" " required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <button type="submit" id="send" class="contact__button">
+                    <span class="btn-label">Send Message</span>
+                    <i class='bx bx-loader-alt btn-spinner'></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"><i class='bx'></i><span class="toast__text"></span></div>
+
+<!--===== FOOTER =====-->
+<footer class="footer section">
+    <div class="footer__container bd-grid">
+        <div class="footer__data">
+            <h2 class="footer__title">N<span>.</span>Iqbal</h2>
+            <p class="footer__text">Thanks for stopping by — built one component at a time.</p>
+        </div>
+
+        <div class="footer__data">
+            <h2 class="footer__title">Explore</h2>
+            <ul>
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__data">
+            <h2 class="footer__title">Follow</h2>
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/nimra-iqbal252004" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Nimraiqbal-n" class="footer__social"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer__bottom">© <span id="year"></span> Nimra Iqbal. All rights reserved.</p>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
+
+<!--===== SCRIPTS ===== -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="scene.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
